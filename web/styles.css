@@ -1,0 +1,32 @@
+header{
+    background-color: #1010de;
+    color:white;
+}
+
+nav{
+    background-color: black;
+    color: white;
+}
+
+main{
+    background-color: antiquewhite;
+    height: 300px
+}
+
+footer{
+    background-color: purple
+}
+
+* {
+    margin: 0px auto; /* o 5px é emcima e embaixo  e o auto é esquerda e direita. */
+}
+
+header, nav, main, footer{
+    width: 90%;
+    padding: 10px;
+    box-sizing: border-box /* esse comando não permite o aumento da caixa quando adicionamos o padding*/
+}
+
+div.submenu{
+    display: none /* Deixa esta caixa oculta.*/
+}
