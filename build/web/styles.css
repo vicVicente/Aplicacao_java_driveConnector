@@ -28,5 +28,51 @@ header, nav, main, footer{
 }
 
 div.submenu{
-    display: none /* Deixa esta caixa oculta.*/
+    display: none; /* Deixa esta caixa oculta.*/
+    position: absolute; /*Não deixa a tag "nav" esticar */
+}
+
+div.menu:hover div.submenu{
+    display: block; /* exibe o submenu*/
+}
+
+div.submenu a {
+    display: block; /*Exibe uma opção abaixo da outra.*/
+    color: white; /*deixa a letra branca*/
+    text-decoration: none; /*remove o sublinhado da tag "A"*/
+    padding: 5px 20px; /* 5px ele vai dar expaçamento em cima e embaixo e o 20px vai dar espaçamento 
+                        da esquerda e da direita*/
+    background-color: blue;
+    box-shadow: 10px 15px 15px 0px rgba(0,0,0,0.3);
+}
+
+div.submenu a:hover { /*qunado eu passar o mouse em cima do elemento*/
+    text-decoration: underline;
+    background-color: #12106b;
+}
+
+button.botao{
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 5px 20px;
+}
+
+div.menu:hover button.botao{
+    background-color: blue;
+    font-weight: bold
+}
+
+button.botao:hover{
+    background-color: blue;
+    font-weight: bold; /*negrito*/
+}
+
+button.botao, div.submenu {
+    min-width: 140px;
+    text-align: left;
+}
+
+div.menu{
+    display: inline-block;
 }
