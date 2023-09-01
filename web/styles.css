@@ -10,7 +10,7 @@ nav{
 
 main{
     background-color: antiquewhite;
-    height: 300px
+    height: 500px
 }
 
 footer{
@@ -60,7 +60,8 @@ button.botao{
 
 div.menu:hover button.botao{
     background-color: blue;
-    font-weight: bold
+    font-weight: bold;
+    cursor: pointer;
 }
 
 button.botao:hover{
@@ -69,10 +70,18 @@ button.botao:hover{
 }
 
 button.botao, div.submenu {
-    min-width: 140px;
+    min-width: 100px;
     text-align: left;
+    font-size: 13px;
+    font-family: calibri;
 }
 
 div.menu{
     display: inline-block;
+}
+
+main iframe{ /*Configurar o iframe que está dentro do main*/
+    width: 100%;
+    height: 100%;
+    border: 0px;    
 }

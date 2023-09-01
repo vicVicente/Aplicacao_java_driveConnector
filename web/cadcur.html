@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de cursos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form method="post" action="cadcur.jsp">
+            <p>
+                <label for="cod">Código:*</label>
+                <input id="cod" type="text" name="codigo" size="5" maxlength="5" required> <!--required diz que o campo é obrigatório -->
+            </p>
+            <p>
+                <label for="nom">Nome:*</label>
+                <input id="nom" type="text" name="nome" size="50" maxlength="50" required>
+            </p>
+            <p>
+                <label for="dur">Duração:</label>
+                <input id="dur" type="text" name="duracao" size="15" maxlength="15">
+            </p>
+            <p>
+                <input type="submit" value="Salvar">
+            </p>
+                
+        </form>        
+    </body>
+</html>
