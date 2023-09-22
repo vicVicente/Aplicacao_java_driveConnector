@@ -7,7 +7,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Cadastro de Cursos</title>
     </head>
     <body>
         <%
@@ -21,7 +21,7 @@
             
                 // Conecta com o banco de dados
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/quintas_noite","root","sua senha");
+                Connection conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/quintas_noite","root","Sua senha");
 
                 //Inserir os dados recebidos no cadcur.html na tabela curso do BD
                 String sql = "INSERT INTO curso VALUES(?,?,?)";
