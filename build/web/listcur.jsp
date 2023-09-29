@@ -26,6 +26,7 @@
                 <th> Código </th>
                 <th> Nome </th>
                 <th> Duração </th>
+                <th> Exclusão </th>
             </tr>
 
             <%
@@ -36,6 +37,7 @@
                         <td><%=resultado.getString("codigo")%></td>
                         <td><%=resultado.getString("nome")%></td>
                         <td><%=resultado.getString("duracao")%></td>
+                        <td><a href="excur.jsp?codigo=<%=resultado.getString("codigo")%>"> Excluir </a></td>
                     </tr>
             <%       
                 }
