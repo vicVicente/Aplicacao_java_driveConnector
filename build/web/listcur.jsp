@@ -19,7 +19,7 @@
             String sql = "SELECT * FROM curso";
             PreparedStatement st = conexao.prepareStatement(sql);
 
-            ResultSet resultado = st.executeQuery();
+            ResultSet resultado = st.executeQuery();//Executa o select
         %>
         <table>
             <tr>  
@@ -27,6 +27,7 @@
                 <th> Nome </th>
                 <th> Duração </th>
                 <th> Exclusão </th>
+                <th> Alteração </th>
             </tr>
 
             <%
@@ -38,6 +39,7 @@
                         <td><%=resultado.getString("nome")%></td>
                         <td><%=resultado.getString("duracao")%></td>
                         <td><a href="excur.jsp?codigo=<%=resultado.getString("codigo")%>"> Excluir </a></td>
+                        <td><a href="carregacurso.jsp?codigo=<%=resultado.getString("codigo")%>"> Alterar </a></td>
                     </tr>
             <%       
                 }
