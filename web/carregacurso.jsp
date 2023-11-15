@@ -32,7 +32,7 @@
                 if (resultado.next()) {//Se o curso foi encontrado na tabela
                     //Carregar os dados do curso em um formulário HTML           
 %>
-        <form method="post" action="altcur.jsp">
+        <form method="post" action="enviaAlteracao.jsp">
             <p>
                 <label for="cod">Código:*</label>
                 <input readonly id="cod" type="text" name="codigo" size="5" maxlength="5" required value="<%= resultado.getString("codigo")%>"> 
